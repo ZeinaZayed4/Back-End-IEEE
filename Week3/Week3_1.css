@@ -1,0 +1,44 @@
+div {
+	background-color: rgb(232, 229, 229);
+	width: 400px;
+	margin: auto;
+	padding: 30px;
+	margin-top: 40px;
+	border-top: 3px solid rgb(255, 30, 0);
+	border-bottom: 3px solid rgb(255, 30, 0);
+	border-right: 3px solid rgb(32, 137, 242);
+	border-left: 3px solid rgb(32, 137, 242);
+}
+
+span {
+	color: white;
+	position: absolute;
+	width: 20px;
+	height: 15px;
+	text-align: center;
+	padding: 10px;
+	background-color: rgb(32, 137, 242);
+}
+.top-left {
+	top: 25px;
+	left: 520px;
+	border-right: 3px solid rgb(255, 30, 0);
+}
+
+.bottom-left {
+	bottom: 535px;
+	left: 520px;
+	border-right: 3px solid rgb(255, 30, 0);
+}
+
+.top-right {
+	top: 25px;
+	right: 520px;
+	border-left: 3px solid rgb(255, 30, 0);
+}
+
+.bottom-right {
+	bottom: 535px;
+	right: 520px;
+	border-left: 3px solid rgb(255, 30, 0);
+}
