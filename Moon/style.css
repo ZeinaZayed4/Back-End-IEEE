@@ -1,0 +1,8 @@
+.moon {
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	background-color: transparent;
+	box-shadow: inset 20px -10px 0 2px rgb(146, 146, 28);
+	margin: auto;
+}
