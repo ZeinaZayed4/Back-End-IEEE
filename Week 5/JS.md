@@ -298,4 +298,226 @@ addThree();
 console.log(sum); // 3
 ```
 
-#### -Assignment With a Returned Value
+#### - Assignment With a Returned Value
+
+```js
+var changed = 0;
+function change(num) {
+	return (num + 5) / 5;
+}
+changed = change(10);
+
+console.log(changed);
+```
+
+#### - Stand in Line
+
+- Queue is an abstract data structure where items are kept in order.
+
+```js
+function nextInLine(arr, item) {
+	arr.push(item);
+	return arr.shift();
+}
+
+var testArr = [1, 2, 3, 4, 5];
+console.log("Before:", JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After:", JSON.stringify(testArr));
+```
+
+## Boolean Values
+
+```js
+function welcomeToBooleans() {
+	return false;
+}
+```
+
+## Use Conditional Logic with If Statements
+
+```js
+function trueOrFalse(isItTrue) {
+	if (isItTrue) {
+		return "Yes, it's true";
+	}
+	return "No, it's false";
+}
+console.log(trueOrFalse(true));
+```
+
+## Comparison with the Equality Operator
+
+```js
+function testEqual(val) {
+	if (val == 10) {
+		return "Equal";
+	}
+	return "Not equal";
+}
+console.log(testEqual(10));
+```
+
+## Comparison with the Strict Equality Operator
+
+```js
+function testStrict(val) {
+	if (val === 10) {
+		return "Equal";
+	}
+	return "Not equal";
+}
+console.log(testStrict("10"));
+```
+
+## Comparison with the Greater Than Operator
+
+```js
+function testGreaterThan(val) {
+	if (val > 100) {
+		return "Over 100";
+	} else if (val > 10) {
+		return "Over 10";
+	}
+	return "10 or Under";
+}
+
+console.log(testGreaterThan(10));
+```
+
+## Comparison with the Logical And Operator
+
+```js
+function testLogicalAnd(val) {
+	if (val <= 50 && val >= 25) {
+		return "Yes";
+	}
+	return "No";
+}
+console.log(testLogicalAnd(10));
+```
+
+## Comparison with the Logical Or Operator
+
+```js
+function testLogicalOr(val) {
+	if (val > 20 || val < 10) {
+		return "Outside";
+	}
+	return "Inside";
+}
+console.log(testLogicalOr(15));
+```
+
+## Else Statement
+
+```js
+function testElse(val) {
+	var result = "";
+	if (val > 5) {
+		result = "Bigger than 5";
+	} else {
+		result = "5 or smaller";
+	}
+	return result;
+}
+console.log(testElse(15));
+```
+
+## Else If Statements
+
+```js
+function testElseIf(val) {
+	if (val > 10) {
+		return "Greater than 10";
+	} else if (val < 5) {
+		return "Smaller than 5";
+	} else {
+		return "Between 5 and 10";
+		s;
+	}
+}
+console.log(testElseIf(15));
+```
+
+## Golf Code
+
+```js
+var names = [
+	"Hole-in-one!",
+	"Eagle",
+	"Birdie",
+	"Par",
+	"Bogey",
+	"Double Bogey",
+	"GO Home!",
+];
+function golfScoer(par, strokes) {
+	if (strokes == 1) {
+		return names[0];
+	} else if (strokes <= par - 2) {
+		return names[1];
+	} else if (strokes == par - 1) {
+		return names[2];
+	} else if (strokes == par) {
+		return names[3];
+	} else if (strokes == par + 1) {
+		return names[4];
+	} else if (strokes == par + 2) {
+		return names[5];
+	} else if (strokes >= par + 3) {
+		return names[6];
+	}
+}
+console.log(golfScoer(5, 4));
+```
+
+## Switch Statements and Default
+
+```js
+function caseInSwitch(val) {
+	var answer = "";
+	switch (val) {
+		case 1:
+			answer = "alpha";
+			break;
+		case 2:
+			answer = "beta";
+			break;
+		case 3:
+			answer = "gamma";
+			break;
+		case 4:
+			answer = "delta";
+			break;
+		default:
+			answer = "other";
+			break;
+	}
+	return answer;
+}
+console.log(caseInSwitch(5));
+```
+
+## Returning Early Pattern from Functions
+
+```js
+function abTest(a, b) {
+	if (a < 0 || b < 0) {
+		return undefined;
+	}
+	return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+console.log(abTest(4, 2));
+```
+
+## Build JS Objects
+
+```js
+var ourDog = {
+	name: "Camper",
+	legs: 4,
+	tails: 1,
+	friends: ["everything!"],
+};
+```
