@@ -25,3 +25,7 @@
 # 7- Array Reduce Transformations
 
 ![Array Reduce Transformations](7.png)
+
+# 9- Return Length of Arguments Passed
+
+![Return Length of Arguments Passed](9.png)
